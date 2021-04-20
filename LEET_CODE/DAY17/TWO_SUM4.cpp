@@ -17,15 +17,12 @@ private:
     bool findTargetInSortedArray(vector<int> a, int target) {
         for (int i = 0, j = a.size() - 1; i < j;) {
             int sum = a[i] + a[j];
-            if (sum == target) {
+            if (sum == target) 
                 return true;
-            }
-            else if (sum < target) {
+            else if (sum < target)
                 i++;
-            }
-            else {
+            else 
                 j--;
-            }
         }
 
         return false;
